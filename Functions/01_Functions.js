@@ -114,3 +114,93 @@
 // (function (){
 //     console.log('inside IIFE')
 // })()
+
+
+
+// function greet(name){
+//     return `hello ${name} !`
+// }
+// greet('hitesh')
+// console.log(greet("Vinay"))
+// console.log(greet())
+
+
+
+// defult parmeters 
+// function add(a,b=5){
+//     console.log(a+b)
+// }
+// add(25)
+
+
+
+// function Search(array,target){
+//     let count = 0
+//     for(let i = 0; i<array.length;i++){
+//         if(array[i] == target){
+//             count++
+//             break
+//         }
+//     }
+//     if(count > 0){
+//         console.log(true)
+//     }else{
+//         console.log(false)
+//     }
+// }
+// let arr = [1,2,3,4,5,6,6,5,4,3,2,1]
+// Search(arr,5)
+
+
+
+
+
+
+// function Search(array,target){
+//     for(let i = 0; i<array.length;i++){
+//         if(array[i] == target){
+//             return true
+//         }
+//     }
+//     return false
+
+// }
+// let arr = [1,2,3,4,5,6,6,5,4,3,2,1]
+// let result = Search(arr,10)
+// console.log(result)
+
+
+
+
+// function reptative(arr,targetNum){
+//     let count = 0
+//     for(let i = 0; i<arr.length;i++){
+//         if(arr[i] == targetNum){
+//             count++
+//         }
+//     }
+//     return count
+// }
+// let arr = [1,2,3,4,5,4,3,2,7,5,1,2,4]
+// let reult = reptative(arr,4)
+// console.log(reult)
+
+
+
+
+function Maxnumber(arr,target){
+    let max = arr[0]
+    for(let i = 0; i<arr.length; i++){
+        if(arr[i] > max){
+            max = arr[i]
+        }
+    }
+    if(max == target){
+        return true
+    }else{
+        return false
+    }
+}
+let arr = [1,2,3,4,5,11,6,7,10,9]
+let maxvalue = Maxnumber(arr,11)
+console.log(maxvalue)
