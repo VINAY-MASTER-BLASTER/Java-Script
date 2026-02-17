@@ -232,5 +232,23 @@
 
 
 
+let arr = [1,2,3,1,2,4,5,3,4,6,7,8,3,9,5,10]
 let ans = []
-console.log(ans.length)
+let index = 1
+ans[0] = arr[0]
+for(let i = 0; i<arr.length; i++){
+    let count = 0;
+    for(let j = 0; j<ans.length; j++){
+        if(arr[i] == ans[j]){
+            count++
+        }
+    }
+    if(count == 0){
+        ans[index] = arr[i]
+        index++
+    }
+}
+console.log(ans)
+
+
+
