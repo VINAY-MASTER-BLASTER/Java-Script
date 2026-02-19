@@ -121,14 +121,110 @@
 
 
 // Question : map of filter the who divisible 5 assign in a new arrays 
-    let arr = [1,2,3,4,5,6,7,8,9,10]
-    let newarr = []
-    let ans = arr.map((ele)=>{
-        if(ele%5==0){
-            return newarr.push(ele)
-        }else{
-            return 0
-        }
-    })
-    console.log(newarr)
-    console.log(ans)
+    // let arr = [1,2,3,4,5,6,7,8,9,10]
+    // let newarr = []
+    // let ans = arr.map((ele)=>{
+    //     if(ele%5==0){
+    //         return newarr.push(ele)
+    //     }else{
+    //         return 0
+    //     }
+    // })
+    // console.log(newarr)
+    // console.log(ans)
+
+
+
+// ! reduce 
+// let arr = [1,2,3,4,5,6,7,8,9,10] 
+// let ans = arr.reduce((acc,ele)=>{
+//     return acc + ele
+
+// },0) //InitialValue
+// console.log(ans)
+
+
+
+// Question : kuch middle element ka sum find karo 
+// let arr = [1,2,3,4,5,6,7,8,9,10] 
+// let ans = arr.reduce((acc,ele)=>{
+//     if(ele > 2 && ele < 8){
+//         acc = acc + ele
+//     }
+//     return acc
+// },0) //InitialValue
+// console.log(ans)
+
+
+// let arr = [1,2,3,4,5,6,7,8,9,10] 
+// let del = arr.splice(2,4)
+// //? also used 
+// let del = arr.slice(2,4)
+
+// console.log(del)
+// let value = del.reduce((acc,ele)=>{
+//     return acc + ele
+// },0)
+
+// console.log(value)
+
+
+
+// ! forEach 
+// forEach just perform a task not change the array or retune something 
+// not chages in origin Array  and it doesn't return any thing 
+// looping 
+// use as a normal for-loop like similar 
+// performs any task but store in different Array  
+
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+// arr.forEach((ele)=>{
+//     console.log(ele)
+// })
+
+// Question : In the Array those Number who is divisible by 2 and 5 store in new Array
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+// let newArr = []
+// arr.forEach((ele)=>{
+//     if(ele%2==0 || ele%5==0){
+//         newArr.push(ele)
+//     }
+// })
+// console.log(newArr)
+
+
+
+//! sort 
+// sort method shorting by alphabet dictionary a to z
+// let arr = [1,4,3,6,2,11,101,302,7,5,9,8,10]
+// let arr1 = arr.sort()
+
+// let arr1 = arr.sort((a,b)=>{ //small to big number
+//     return a - b
+// })
+// console.log(arr1)
+
+
+
+
+//? Functions 
+//? Symatx 
+
+// let sum = (a)=> {
+//     return a * 2
+// }
+// let value = sum(10)
+// console.log(value)
+
+
+//? syntax
+// when a sigle parameter function and one line statement  
+// let sum = a => a * 3
+// let value = sum(10)
+// console.log(value)
+
+
+//? implicit return Example 
+// let add = (a,b) => a + b
+// let addition = add(10,25)
+// console.log(addition)
