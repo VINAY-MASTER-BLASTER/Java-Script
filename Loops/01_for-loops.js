@@ -149,3 +149,24 @@
 //         console.log('Prime',i)
 //     }   
 // }
+
+
+
+
+// for of loops Array
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+// for(hello of arr){
+//     console.log(hello)
+// }
+
+// for in loops Object
+// let obj = {
+//     name : "vinay",
+//     age : 21,
+//     city : "delhi",
+//     country : "Inda"
+// }
+
+// for(hello in obj){
+//     console.log(hello,obj[hello])
+// }
