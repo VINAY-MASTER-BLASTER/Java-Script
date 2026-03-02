@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .conatiner{
+            background-color: purple;
+            display: flex;
+            width: 80%;
+            height: 70%;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            margin-top: 10px;
+        }
+        .box{
+            display: flex;
+            height: 80px;
+            width: 100px;
+            background-color: khaki;
+            border: 2px solid black;
+            margin-top: 25px;
+        }                                               
+    </style>
+</head>
+<body>
+    <h1>Traffic Light</h1>
+    <div class="conatiner">
+        <div class="left">
+            <div class="circle" style="background-color: red;"></div>  
+            <div class="circle" style="background-color: green;"></div>
+            <div class="circle" style="background-color: blue;"></div>
+        </div>
+        <div class="right">
+            <div class="box" style="display: flex; align-items: center; justify-content: center;">turn On</div>
+            <div class="box" style="display: flex; align-items: center; justify-content: center;">turn On</div>
+            <div class="box" style="display: flex; align-items: center; justify-content: center;">turn On</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
