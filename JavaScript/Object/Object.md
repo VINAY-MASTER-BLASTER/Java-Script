@@ -1,5 +1,5 @@
 # Objects
-
+<hr>
 ### What is a Objects
 
 what is Object - object is a data structure
@@ -8,8 +8,8 @@ data structure means where we store multiple datatype in one sigle element
 ### How to Create a Object
 
 **_Object Literals - {}_**
-Object work on key and value pairs
-Advantages :Simple 
+Object work on key and value pairs <br>
+Advantages :Simple <br>
 this is not act as a blue Print 
 
 ```JAVASCRIPT
@@ -30,7 +30,7 @@ console.log(obj1.occupation)
 obj1.getName()
 ```
 
-
+<hr>
 ### Constructor Functions
 base Blur Print 
 what is Constructor Functions - basically ek asa function jo Object ko Construct karna ma help Karaga
@@ -58,6 +58,6 @@ console.log(obj1.name)
 obj1.Hello()
 console.log(obj1 instanceof Person);   // true
 ```
-Before ES6 - Object Literals {} , Constructor functions 
+Before ES6 - Object Literals {} , Constructor functions use for creating a Object <br>
 After ES6 - Class Keywords 
 
